@@ -1,0 +1,10 @@
+^F:\WORK\LIBSSH\OUT\BUILD\X64-WINDOWS-MSVC\CMAKEFILES\83EC3D1E96986443D7D2A08290653CF8\GENERATE.STAMP.RULE
+setlocal
+F:\Softwares\Cmake\bin\cmake.exe -SF:/work/libssh -BF:/work/libssh/out/build/x64-windows-msvc --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/work/libssh/out/build/x64-windows-msvc/MySSHServer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
