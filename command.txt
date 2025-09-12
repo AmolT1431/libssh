@@ -1,1 +1,1 @@
-hello
+ ssh-keygen -t rsa -b 2048 -m PEM -f ssh_host_rsa_key
