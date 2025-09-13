@@ -1,0 +1,10 @@
+^C:\USERS\AT\DESKTOP\LIBOSSH\LIBSSH\CMAKELISTS.TXT
+setlocal
+C:\Windows\cmake-4.1.1-windows-x86_64\bin\cmake.exe -SC:/Users/AT/Desktop/libossh/libssh -BC:/Users/AT/Desktop/libossh/libssh/build/x64-windows-msvc --check-stamp-file C:/Users/AT/Desktop/libossh/libssh/build/x64-windows-msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
